@@ -75,14 +75,17 @@ if __name__ == '__main__':
     print('開始使爬蟲 ' + club + ' 版')
     print('從 ' + str(start) + ' 到 ' + str(end) + ' 頁')
     print('一共開啟 '+ str(thread_num) +' 線程')
+    print('========================')
             
     for i in range(start, end, 100):
-        try:
-            multi_parsing(i,i+100)
-        except:
-            print("連接錯誤 30 秒 CD 中")
-            time.sleep(30)
-            multi_parsing(i,i+100)
+        flag = True
+        while flag:
+            try:
+                multi_parsing(i,i+100)
+                flag = False
+            except:
+                print("連接錯誤 30 秒 CD 中")
+                time.sleep(30)
 
 
 # In[ ]:
