@@ -12,22 +12,22 @@
 
 python 套件 requests-html
 
-'''
+```
 python -m pip install requests-html
-'''
+```
 
 ## 使用方式
 
 
 - 將本專案 clone 下來
-'''
+```
 git clone https://github.com/ReDiana-git/CrawlerPTT.git
-'''
+```
 
 - 使用 
-'''
+```
 python main.py --start="想要開始的頁數" --end="結束頁數" --club="想要爬取的版" --thread="執行線程數量"
-'''
+```
 
 | 參數 |選必填| 內容 | 備註|
 |---  |-----|----|----|
